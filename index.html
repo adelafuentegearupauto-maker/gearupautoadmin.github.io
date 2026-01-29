@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -14,16 +14,40 @@
       line-height: 1.6;
     }
 
-    header {
-      background: #3b2a78; /* royal purple */
-      color: #ffffff;
+    /* Top Branding */
+    .top-brand {
+      background: #3b2a78;
       text-align: center;
-      padding: 3rem 1rem;
+      padding: 2.75rem 1rem;
     }
 
-    header img {
-      max-width: 300px;
-      margin-bottom: 1rem;
+    .top-brand img {
+      max-width: 280px;
+      margin-bottom: 0.75rem;
+    }
+
+    .phone {
+      font-size: 1.1rem;
+      margin: 0.25rem 0;
+    }
+
+    .phone a {
+      color: #6bbcff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hours {
+      color: #e5e7eb;
+      font-size: 0.95rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .tagline {
+      color: #f1f5f9;
+      font-size: 1rem;
+      max-width: 720px;
+      margin: auto;
     }
 
     section {
@@ -56,20 +80,26 @@
       font-size: 1.1rem;
     }
 
-    .cta {
-      background: #6bbcff; /* baby blue */
-      text-align: center;
-      padding: 3rem 1.5rem;
+    /* Discount Banner */
+    .discount {
+      background: #e0f2ff;
+      border-left: 6px solid #6bbcff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-top: 1.5rem;
     }
 
-    .cta h2 {
-      color: #1f2937;
+    /* CTA */
+    .cta {
+      background: #6bbcff;
+      text-align: center;
+      padding: 3rem 1.5rem;
     }
 
     .cta a {
       background: #3b2a78;
       color: #ffffff;
-      padding: 0.85rem 1.75rem;
+      padding: 0.9rem 1.8rem;
       border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
@@ -89,95 +119,107 @@
 
 <body>
 
-<header>
+<!-- HEADER -->
+<header class="top-brand">
   <img src="logo.png" alt="Gear Up Auto Admin Logo">
-  <p>Virtual administrative support for service businesses — stay organized, responsive, and paid.</p>
+  <p class="phone">📞 <a href="tel:+12103322918">210-332-2918</a></p>
+  <p class="hours">Business Hours: Monday–Friday · 9:00 AM – 6:00 PM</p>
+  <p class="tagline">
+    Virtual administrative support for service businesses — stay organized, responsive, and paid.
+  </p>
 </header>
 
+<!-- INTRO -->
 <section>
   <h2>Take Admin Off Your Plate</h2>
   <p>
-    Running a service business means juggling customer calls, scheduling, invoices, and follow-ups —
+    Running a service business means juggling calls, scheduling, estimates, and customer follow-ups —
     often while you’re already busy doing the work.
   </p>
   <p>
-    Gear Up Auto Admin provides reliable virtual administrative support for service-based businesses,
-    helping you stay organized, responsive, and professional without hiring in-house staff.
+    Gear Up Auto Admin provides reliable virtual administrative support so you can focus on your business
+    while your customers get fast, professional responses.
   </p>
 </section>
 
+<!-- SERVICES -->
 <section>
   <h2>What I Handle For You</h2>
   <div class="grid">
-    <div class="card">Answering customer calls and messages</div>
-    <div class="card">Scheduling jobs and managing calendars</div>
-    <div class="card">Sending invoices, estimates, and payment follow-ups</div>
-    <div class="card">Email and customer communication</div>
-    <div class="card">Organizing job and customer details</div>
-    <div class="card">General admin tasks that slow your business down</div>
+    <div class="card">Answering customer calls and texts</div>
+    <div class="card">Scheduling jobs and calendar management</div>
+    <div class="card">Providing estimates</div>
+    <div class="card">Customer follow-ups and reviews</div>
+    <div class="card">Email and client communication</div>
+    <div class="card">General admin tasks that slow you down</div>
   </div>
 </section>
 
-<section>
-  <h2>Why Gear Up Auto Admin</h2>
-  <div class="grid">
-    <div class="card">Built for service-based businesses</div>
-    <div class="card">More time for paid work</div>
-    <div class="card">Professional, consistent customer communication</div>
-    <div class="card">Flexible support without hiring employees</div>
-  </div>
-</section>
-
+<!-- HOW IT WORKS -->
 <section>
   <h2>How It Works</h2>
   <div class="grid">
-    <div class="card">
-      <strong>1. Quick Consult</strong><br>
-      We discuss your business, workload, and what tasks you want off your plate.
-    </div>
-    <div class="card">
-      <strong>2. Custom Support Plan</strong><br>
-      I create a support plan tailored to your needs and volume.
-    </div>
-    <div class="card">
-      <strong>3. Ongoing Admin Support</strong><br>
-      I handle the admin while you focus on your business.
-    </div>
+    <div class="card"><strong>1. Quick Consult</strong><br>We discuss your workload and needs.</div>
+    <div class="card"><strong>2. Choose a Package</strong><br>Select the support level that fits your business.</div>
+    <div class="card"><strong>3. Ongoing Support</strong><br>I handle admin while you focus on work.</div>
   </div>
 </section>
 
+<!-- PRICING -->
 <section>
-  <h2>Flexible Support Packages</h2>
-  <p>
-    Every business is different. I offer flexible monthly and custom admin support packages
-    based on your needs, workload, and growth stage.
-  </p>
+  <h2>Support Packages</h2>
+
+  <div class="discount">
+    <strong>Winter Support Discount:</strong>  
+    Sign up by <strong>Friday, February 6th</strong> and receive <strong>15% off your first month</strong>.
+  </div>
+
   <div class="grid">
     <div class="card">
-      <strong>Starter Support</strong><br>
-      Ideal for small or growing service businesses.
+      <strong>Bronze — $350/month</strong><br>
+      Call & text handling during business hours<br>
+      Scheduling & calendar management
     </div>
+
     <div class="card">
-      <strong>Growth Support</strong><br>
-      Consistent scheduling, communication, and follow-ups.
+      <strong>Silver — $450/month (Most Popular)</strong><br>
+      Everything in Bronze<br>
+      Estimates provided to customers
     </div>
+
     <div class="card">
-      <strong>Full Support</strong><br>
-      End-to-end administrative assistance.
+      <strong>Gold — $550/month</strong><br>
+      Everything in Silver<br>
+      Customer follow-ups for reviews
+    </div>
+
+    <div class="card">
+      <strong>Diamond — $750/month</strong><br>
+      Call & text handling, scheduling, estimates, review follow-ups<br>
+      Availability: <strong>12 hours/day, 7 days/week</strong><br>
+      Best for high-volume mobile mechanics
+    </div>
+
+    <div class="card">
+      <strong>Platinum — $1,250/month</strong><br>
+      Everything in Gold<br>
+      Bookkeeping services included
     </div>
   </div>
 </section>
 
+<!-- CTA -->
 <section class="cta">
   <h2>Ready to Gear Up Your Business?</h2>
-  <p>Let’s talk about how admin support can help your business run smoother.</p>
-  <a href="mailto:adelafuentegearupauto@gmail.com">Contact Me</a>
+  <p>Let’s talk about the right support package for your business.</p>
+  <a href="mailto:adelafuentegearupautoadmin@gmail.com">Contact Me</a>
 </section>
 
 <footer>
-  © 2026 Gear Up Auto Admin · Virtual Administrative Support
+   2026 Gear Up Auto Admin · Virtual Administrative Support
 </footer>
 
 </body>
 </html>
+
 
